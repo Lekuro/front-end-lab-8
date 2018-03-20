@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head> 
   <meta charset="utf-8">
   <title>hw</title>
   <link rel="stylesheet" href="style.css">
@@ -13,138 +13,161 @@
       <div id="container">
         <div id="content" role="main">
           <!-- TODO: Content goes here -->
-					<header> 
-						<a href="http://www.epam.com/"><img src="EPAM_logo.svg" alt="epam"></a>
-						<nav> 							
-							<a href="#section1"><strong>HTML</strong></a>
-							<a href="#section2"><strong>List</strong></a>
-							<a href="#section3"><strong>Table</strong></a>
-							<a href="#section4"><strong>Text formats</strong></a>
-							<a href="#section5"><strong>Blockquotes</strong></a>														
-						</nav>
-						<hr>
-						<a id="section1"><h1><strong>HTML Elements</strong></h1></a>
-						<hr>	
-					</header>									
-					<section>
-						
-						<a id="section2"><h2>Ordered List</h2></a>					
-						<ul>
-							<li>
-								<h1>Heading 1</h1>
-								<ul>
-									<li>
-										<h2>Heading 2</h2>
-										<ul>
-											<li>
-												<h3>Heading 3</h3>
-											</li>										
-										</ul>
-									</li>								
-								</ul>
-							</li>						
-						</ul>					
-						<ol>
-							<li>
-								<h4>Heading 4</h4>
-								<ol>
-									<li> 
-										<h5>Heading 5</h5>
-										<ol> 
-											<li> 
-												<h6>Heading 6</h6>
-											</li>
-										</ol>
-									</li>
-								</ol>
-							</li>
-						</ol>					
-						<h3>Definition List</h3>
-						<dl> 
-							<dt>defines terms 1</dt>
-							<dd>description 1</dd>
-							<dt>defines terms 2</dt>
-							<dd>description 2</dd>
-						</dl>					
-						<h2>Details</h2>
-						<details open=""> 
-							<summary>Even more details open</summary>
-							<p>Here are even more details about the details.</p>
-						</details>
-						<details>						
-							<summary>Even more details close</summary>
-							<p>Here are even more details about the details.</p>
-						</details>
-						<hr>
-					
-						<a id="section3"><h2>Table</h2></a>
-						<table> 
-							<tr> 
-								<th>Elements</th>
-								<th>Elements</th>
-								<th>Elements</th>
-							</tr>
-							<tr> 
-								<td><strong>strong</strong></td>
-								<td>H<sub>2</sub>O</td>
-								<td><a href="#">test link</a></td>
-							</tr>
-							<tr>
-								<td><i>Italic</i></td>
-								<td><u>Underline.</u></td>
-								<td><del>delete</del></td>
-							</tr>
-							<tr> 
-								<td><abbr>Abbreviation</abbr></td>
-								<td>5<sup>3</sup>=125</td>
-								<td><ins>inserted</ins></td>
-							</tr>
-						</table>
-						<hr> 
-					
-						<a id="section4"><h2>Text formats</h2></a>
-						<h3>Article Text</h3>
-						<article>		
-							<header> 
-								<h2>Article title</h2>
-							</header>						
-							<p>Article description</p>
-						</article>
-						<h3>Preformatted Text</h3>
-						<pre>
-<b>Text</b>
-  in a <b>pre</b> element
-    is displayed in a fixed-width
-font, and it preserves
-both           spaces and
-    line breaks
-						</pre>
-						<h3>Code</h3>
-						<pre>
-							<code> 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-							</code>
-						</pre>
-						<hr> 
-					
-						<a id="section5"><h2>Blockquotes</h2></a>			
-						<p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
-						<blockquote> 
-							Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.
-							<br>
-							<a href="#">Steve Jobs</a>
-						</blockquote>
-						<!--And here’s a bit of trailing text.-->
-						
-					</section>
-					<footer>
-						<span>Copyright Epam Systems</span>
-					</footer>
+          <header>
+            <div id="section0">
+              <a href="http://www.epam.com/"><img src="EPAM_logo.svg" alt="epam"></a>
+              <nav>
+                <a href="#section1"><strong>HTML</strong></a>
+                <a href="#section2"><strong>List</strong></a>
+                <a href="#section3"><strong>Table</strong></a>
+                <a href="#section4"><strong>Text formats</strong></a>
+                <a href="#section5"><strong>Blockquotes</strong></a>
+              </nav>
+            </div>
+            <hr>
+            <div id="section1"><h1><strong>HTML Elements</strong></h1></div>
+            <hr>
+          </header>
+          <section>
+            <!--list-->
+            <div id="section2">
+              <div id="olist">
+                <h2>Ordered List</h2>
+                <ul>
+                  <li>
+                    <h1>Heading 1</h1>
+                    <ul>
+                      <li>
+                        <h2>Heading 2</h2>
+                        <ul>
+                          <li>
+                            <h3>Heading 3</h3>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ol>
+                  <li>
+                    <h4>Heading 4</h4>
+                    <ol>
+                      <li>
+                        <h5>Heading 5</h5>
+                        <ol>
+                          <li>
+                            <h6>Heading 6</h6>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+              <div id="dlist">
+                <h3>Definition List</h3>
+                <dl>
+                  <dt>defines terms 1</dt>
+                  <dd>description 1</dd>
+                  <dt>defines terms 2</dt>
+                  <dd>description 2</dd>
+                </dl>
+              </div>
+              <div id="details">
+                <h2>Details</h2>
+                <details open> 
+                  <summary>Even more details open</summary>
+                  <p>Here are even more details about the details.</p>
+                </details>
+                <details>
+                  <summary>Even more details close</summary>
+                  <p>Here are even more details about the details.</p>
+                </details>
+              </div>
+            </div>
+            <hr>
+            <!--table-->
+            <div id="section3">
+              <h2>Table</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Elements</th>
+                    <th>Elements</th>
+                    <th>Elements</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>strong</strong></td>
+                    <td>H<sub>2</sub>O</td>
+                    <td><a href="#">test link</a></td>
+                  </tr>
+                  <tr>
+                    <td><i>Italic</i></td>
+                    <td><u>Underline.</u></td>
+                    <td><del>delete</del></td>
+                  </tr>
+                  <tr>
+                    <td><abbr>Abbreviation</abbr></td>
+                    <td>5<sup>3</sup>=125</td>
+                    <td><ins>inserted</ins></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr>
+            <!--text-->
+            <div id="section4">
+              <h2>Text formats</h2>
+              <div id="article">
+                <h3>Article Text</h3>
+                <article>
+                  <h2>Article title</h2>
+                  <p>Article description</p>
+                </article>
+              </div>
+              <div id="pre">
+                <h3>Preformatted Text</h3>
+                <pre>
+<!--           --><b>Text</b>
+<!--           -->  in a <b>pre</b> element
+<!--           -->    is displayed in a fixed-width
+<!--           -->font, and it preserves
+<!--           -->both           spaces and
+<!--           -->    line breaks
+                </pre>
+              </div>
+              <div id="code">
+                <h3>Code</h3>
+                <pre>
+                  <code> 
+<!--             -->.wrapper {
+<!--             -->  display: grid;
+<!--             -->  grid-template-columns: repeat(3, 1fr);
+<!--             -->  grid-gap: 10px;
+<!--             -->  grid-auto-rows: minmax(100px, auto);
+<!--             -->}
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <hr>
+            <!--quotes-->
+            <div id="section5">
+              <h2>Blockquotes</h2>
+              <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+              <blockquote> 
+                Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.
+                <br>
+                <a href="#">Steve Jobs</a>
+              </blockquote>
+              <p id="hid" hidden>And here’s a bit of trailing text.</p>
+            </div>
+          </section>
+          <footer>
+            <span>Copyright Epam Systems</span>
+          </footer>
         </div>
       </div>
     </div>

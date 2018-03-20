@@ -1,0 +1,105 @@
+body {
+  background-color: rgba(198, 238, 252, 0.53);
+  color: #ffffff; }
+
+#content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 1px 20px;
+  background-color: #3b3b3b; }
+
+h1 {
+  text-align: center; }
+
+h1,
+h2 {
+  color: #fccd10; }
+
+img {
+  border: 2px solid #fccd10;
+  padding: 2px;
+  float: left;
+  margin-right: 20px; }
+  img:hover {
+    padding: 10px;
+    background-color: #fff178; }
+
+.brief {
+  background-color: #fff178;
+  color: #000000;
+  margin-bottom: 40px;
+  padding: 20px; }
+
+div.brief + img {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0px; }
+
+table {
+  width: 95%;
+  border-collapse: collapse; }
+
+caption {
+  text-align: right;
+  color: #000000; }
+
+th {
+  background-color: #94a34e;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px;
+  font-weight: 400;
+  border-right: 1px solid #3b3b3b; }
+
+th:last-child {
+  border: NONE; }
+
+td {
+  padding: 10px;
+  background-color: #677d01;
+  border-bottom: 1px solid #94a34e; }
+
+a:link,
+a:visited {
+  color: #f5c70f; }
+  a:link:hover,
+  a:visited:hover {
+    padding: 10px;
+    background-color: rgba(198, 238, 252, 0.53); }
+
+.contact-form {
+  color: #f5c70f; }
+  .contact-form label {
+    display: block;
+    text-transform: uppercase; }
+  .contact-form .inline {
+    width: 49%;
+    display: inline-block; }
+  .contact-form .inline:last-child {
+    float: right; }
+  .contact-form .inline input {
+    margin-bottom: 0px; }
+  .contact-form textarea,
+  .contact-form input {
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #94a34e; }
+  .contact-form p {
+    margin-bottom: 10px; }
+  .contact-form button {
+    width: 240px;
+    height: 40px;
+    background-color: #3b3b3b;
+    margin-bottom: 30px;
+    color: #f5c70f;
+    border: 1px solid #f5c70f;
+    text-transform: uppercase;
+    font-size: 16pt; }
+    .contact-form button:hover {
+      padding: 10px;
+      background-color: rgba(198, 238, 252, 0.53); }
+
+/*# sourceMappingURL=style2.css.map */

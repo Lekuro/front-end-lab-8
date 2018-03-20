@@ -1,0 +1,37 @@
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+li:not(:first-child) {
+  padding-left: 10px;
+}
+li {
+  font-size: 24px;
+  line-height: 24px;
+}
+.folder i {
+  color: #dd0;
+  vertical-align: bottom;
+}
+i.grey {
+  color: #ccc;
+  vertical-align: bottom;
+}
+.folder + li,
+.folder i:first-child {
+  display: none;
+}
+.folder {
+  cursor: pointer;
+}
+
+.folder.open i:first-child {
+  display: inline-block;
+}
+.folder.open i:last-child {
+  display: none;
+}
+.folder.open + li {
+  display: block;
+}

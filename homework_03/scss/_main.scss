@@ -1,0 +1,133 @@
+//cd /D d:\epam\homework_03\
+//sass --watch scss\style1.scss:css\style1.css scss\style2.scss:css\style2.css
+@mixin bgColor ($colorBodyBg) {
+  background-color: $colorBodyBg;
+}
+@mixin hoverButA($colorBodyBg) {
+  &:hover {
+    padding: 10px;
+    //border: 5px dotted $colorTable;
+    @include bgColor($colorBodyBg);
+  }
+}
+body {
+  @include bgColor($colorBodyBg);
+  color: $colorText;
+}
+$contentBackground: null !default;
+#content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 1px 20px;
+  @include bgColor($colorContentBg);
+  //background-color: $colorContentBg;
+}
+h1 {
+  text-align: center;
+}
+h1,
+h2 {
+  color: $colorH;
+}
+img {
+  border: 2px solid $colorImgBorder;
+  padding: 2px;
+  float: left;
+  margin-right: 20px;
+  @include hoverButA($colorBriefBg);
+}
+.brief {
+  @include bgColor($colorBriefBg);
+  @if $colorBriefBg == #fadcba {
+    width: 40%;
+    margin-right: 20px;
+    float: left;
+  } @else if $colorBriefBg == #fff178 {
+    color: $colorBriefText;
+    margin-bottom: 40px;
+  }
+  padding: 20px;
+  //box-sizing: border-box;
+}
+div.brief + img {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+table {
+  width: 95%;
+  border-collapse: collapse;
+}
+caption {
+  text-align: right;
+  @if $colorTableBg == #677d01 {
+    color: $colorBriefText;
+  }
+}
+th {
+  @include bgColor($colorTable);
+  //background-color: $colorTable;
+  @if $colorTableBg == #677d01 {
+    color: $colorBriefText;
+  }
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px;
+  font-weight: 400;
+  border-right: 1px solid $colorContentBg;
+}
+th:last-child {
+  border: NONE;
+}
+
+td {
+  padding: 10px;
+  @include bgColor($colorTableBg);
+  //background-color: $colorTableBg;
+  border-bottom: 1px solid $colorTable;
+}
+a:link,
+a:visited {
+  color: $colorA;
+  @include hoverButA($colorBodyBg);
+}
+.contact-form {
+  color: $colorForm;
+  label {
+    display: block;
+    text-transform: uppercase;
+  }
+  .inline {
+    width: 49%;
+    display: inline-block;
+  }
+  .inline:last-child {
+    float: right;
+  }
+  .inline input {
+    margin-bottom: 0px;
+  }
+  textarea,
+  input {
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid $colorTable;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  button {
+    width: 240px;
+    height: 40px;
+    @include bgColor($colorContentBg);
+    //background-color: $colorContentBg;
+    @include hoverButA($colorBodyBg);
+    margin-bottom: 30px;
+    color: $colorButton;
+    border: 1px solid $colorButton;
+    text-transform: uppercase;
+    font-size: 16pt;
+  }
+}

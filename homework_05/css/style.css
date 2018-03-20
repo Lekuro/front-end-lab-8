@@ -1,0 +1,216 @@
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333333;
+  text-align: justify; }
+
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+.resize {
+  max-width: 860px;
+  margin: 0 auto; }
+
+a {
+  float: left; }
+
+nav::after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both; }
+
+header {
+  width: 100%;
+  height: 92px;
+  padding: 15px 0 10px 0; }
+  header nav {
+    margin-left: 200px;
+    line-height: 3; }
+  header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #464547;
+    padding: 0 10px; }
+  header a:hover {
+    color: #39c2d7; }
+
+.banner {
+  width: 100%;
+  height: 378px;
+  background: url(../img/banner.jpg) no-repeat center center;
+  background-size: cover; }
+  .banner p {
+    padding: 50px 0;
+    color: #ffffff;
+    font-size: 42px;
+    width: 45%;
+    text-align: left; }
+
+article {
+  background: #cccccc; }
+  article:hover {
+    background: #39c2d7; }
+
+figure {
+  padding: 10px; }
+
+h3 {
+  margin: 8px 0; }
+
+.news {
+  padding: 1em 0; }
+  .news a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .news img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
+  .news .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em; }
+
+footer {
+  width: 100%;
+  height: 35px;
+  padding: 20px 0 40px 0;
+  background: #39c2d7;
+  color: #ffffff;
+  font-weight: bold; }
+  footer nav {
+    float: left; }
+  footer p::after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both; }
+  footer a {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 20px; }
+    footer a:hover {
+      text-decoration: none; }
+
+@media screen and (max-width: 900px) {
+  .resize {
+    padding: 0 20px;
+    max-width: 100%; }
+
+  header {
+    padding: 25px 0;
+    height: 150px;
+    text-align: center; }
+    header nav {
+      width: 450px;
+      margin: 0 auto; }
+
+  .logo {
+    float: none; }
+
+  .banner {
+    height: 530px; }
+    .banner p {
+      margin: 0 auto;
+      padding: 50px 0;
+      color: #ffffff;
+      font-size: 26px;
+      width: 460px;
+      text-align: center; }
+
+  .news {
+    padding: 1.5em 0; }
+    .news img {
+      margin: 0 auto;
+      width: auto; }
+    .news .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 1.5em; }
+
+  footer {
+    height: 90px;
+    padding: 10px 0; }
+    footer a {
+      float: none;
+      margin: 0;
+      padding: 10px; }
+    footer nav {
+      padding: 10px 0;
+      float: none;
+      text-align: center; }
+    footer p {
+      padding: 10px 0;
+      text-align: center; } }
+@media screen and (max-width: 575px) {
+  .resize {
+    padding: 0; }
+
+  header {
+    padding: 0;
+    height: 215px; }
+    header a:hover {
+      color: #464547; }
+    header nav {
+      width: 100%; }
+      header nav a {
+        background: #eeeeee;
+        border-top: 1px solid #cccccc;
+        text-align: justify;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0 10px 20px;
+        line-height: 1.2; }
+      header nav a:last-child {
+        border-bottom: 1px solid #cccccc; }
+    header img {
+      width: 100px;
+      height: auto;
+      padding: 10px 0 5px 0; }
+
+  .banner {
+    height: 245px; }
+    .banner .resize {
+      padding: 0 20px; }
+    .banner p {
+      position: relative;
+      top: 150px;
+      padding: 10px;
+      color: #ffffff;
+      background: #39c2d7;
+      font-size: 20px;
+      font-weight: 600;
+      width: 100%;
+      text-align: left; }
+
+  .news {
+    padding: 20px; }
+    .news .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 1.5em; }
+    .news a:hover {
+      background: #cccccc; }
+
+  footer {
+    height: 135px; }
+    footer a {
+      display: inline-block;
+      width: 100%;
+      padding: 2px; }
+    footer a:hover {
+      text-decoration: underline; } }
+
+/*# sourceMappingURL=style.css.map */
