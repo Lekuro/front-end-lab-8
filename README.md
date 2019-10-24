@@ -9,7 +9,7 @@ HomeWork_04    https://lekuro.github.io/front-end-lab-8/homework_04/index.html
 
 HomeWork_05    https://lekuro.github.io/front-end-lab-8/homework_05/index.html
 
-HomeWork_07    https://lekuro.github.io/front-end-lab-8/homework_07/task2.html
+HomeWork_07    https://lekuro.github.io/front-end-lab-8/homework_07/task2.html please open console
 
 HomeWork_11    https://lekuro.github.io/front-end-lab-8/homework_11/index.html
 
